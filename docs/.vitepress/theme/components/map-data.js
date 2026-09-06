@@ -114,7 +114,7 @@ export const BUILDINGS = [
     campusId: 'h',
     coord: [120.20438,35.976418],
     desc: '位于一号教学楼与礼贤广场之间，支持人脸/校园卡进入，自习区一座一码。',
-    photo: '/map/library.jpg' // 地图悬浮/详情图（可换图床链接，此注释可删）
+    photo: 'https://pic1.imgdb.cn/i/034K7pyD3sVgfDKDzTehBI.webp' 
   },
   {
     id: 'h_landmark_01',
