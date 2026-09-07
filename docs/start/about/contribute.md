@@ -6,11 +6,11 @@ top: 1
 
 本指南介绍如何向青理 Wiki（QUTWiKi）贡献内容。
 
-## 通过邮箱
+## 通过**邮箱**
 
 如果您有文档需要提交，但不熟悉 Git 或 GitHub，也可以通过邮箱发送到这个邮箱: [**lucasandrew0120@outlook.com**](mailto:lucasandrew0120@outlook.com)。文档格式Markdown（.md）或Word（.docx）均可，若有图片请打包发送并标明插入位置。收到后我会帮您提交到仓库。
 
-## 通过Github PR流程
+## 通过 **GitHub PR** 流程
 
 ### 一、准备环境
 
@@ -200,9 +200,9 @@ git push origin contribute
 - 收到 review 后在同一分支继续修改并 push 即可
 
 
-## 通过飞书流程
+## 通过**飞书**流程
 
 - 欢迎您使用 [**飞书**](https://ycnbhi79uv2d.feishu.cn/wiki/YrIOwlkXlidu4zkAeOjcMP7XnFg?from=from_copylink) 进行 [**QUTWiKi**](https://wiki.quters.top) 的编写工作。
 - 在左侧三栏有**序言，新生入学，校园生活**三个分区，您可以在其中修订文章或者新增篇目。
-- 由于我不会经常登录飞书进行文档的查阅，所以如果您对文档有所更改，欢迎进入 [**QUTWiKi**](https://wiki.quters.top) 的QQ群（**752307273**）进行反馈，或者联系我的个人邮箱说明情况（[**lucasandrew0120@outlook.com**](mailto:lucasandrew0120@outlook.com)）
+- 由于我不会经常登录飞书进行文档的查阅，所以如果您对文档有所更改，欢迎进入 [**QUTWiKi**](https://wiki.quters.top) 的项目组QQ群（**752307273**）进行反馈，或者联系我的个人邮箱说明情况（[**lucasandrew0120@outlook.com**](mailto:lucasandrew0120@outlook.com)）
 - 反馈时请说明修改时间，修改人名称和修改内容
