@@ -6,6 +6,10 @@ top: 1
 
 本指南介绍如何向青理 Wiki（QUTWiKi）贡献内容。
 
+## 通过邮箱
+
+如果您有文档需要提交，但不熟悉 Git 或 GitHub，也可以通过邮箱发送到这个邮箱: [**lucasandrew0120@outlook.com**](mailto:lucasandrew0120@outlook.com)。文档格式Markdown（.md）或Word（.docx）均可，若有图片请打包发送并标明插入位置。收到后我会帮您提交到仓库。
+
 ## 通过Github PR流程
 
 ### 一、准备环境
