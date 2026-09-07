@@ -6,9 +6,9 @@ top: 1
 
 本指南介绍如何向青理 Wiki（QUTWiKi）贡献内容。
 
----
+## 通过Github PR流程
 
-## 一、准备环境
+### 一、准备环境
 
 - [Node.js](https://nodejs.org/) 22.17+，推荐 [nvm-windows](https://github.com/coreybutler/nvm-windows)
 - [Git](https://git-scm.com/)，配置用户名和邮箱
@@ -22,7 +22,7 @@ npm config set registry https://registry.npmmirror.com
 
 ---
 
-## 二、获取代码
+### 二、获取代码
 
 ```bash
 # 先 Fork 源仓库，再在 GitHub 上复制你的 Fork 仓库地址
@@ -50,7 +50,7 @@ git push origin contribute
 
 ---
 
-## 三、安装并预览
+### 三、安装并预览
 
 ```bash
 npm ci
@@ -71,9 +71,9 @@ npm run dev
 
 ---
 
-## 四、编写文档
+### 四、编写文档
 
-### 文件位置
+###### 文件位置
 
 `docs/start/` 下按目录分类存放：
 
@@ -88,7 +88,7 @@ npm run dev
 | `campus-life/competition/` | 竞赛--战队 |
 | `about/` | 关于本站 |
 
-### 命名与格式
+###### 命名与格式
 
 - 小写英文 + 短横线：`canteen-guide.md`
 - 必含一个 `# 标题`，或写 `title: 标题` 在 frontmatter 中
@@ -98,9 +98,9 @@ npm run dev
 
 ---
 
-## 五、提交 PR
+### 五、提交 PR
 
-### 1. 确认 GitHub 身份
+###### 1. 确认 GitHub 身份
 
 提交前请先确认本地 Git 的用户名和邮箱与 GitHub 账号匹配，否则贡献记录可能显示为空头像或无法关联到你的 GitHub 账号。
 
@@ -122,7 +122,7 @@ git config user.email "YOUR_ID+YOUR_GITHUB_USERNAME@users.noreply.github.com"
 git commit --amend --reset-author
 ```
 
-### 2. 在自己的 `contribute` 分支提交
+###### 2. 在自己的 `contribute` 分支提交
 
 如果你已经按前文创建过 `contribute` 分支，后续贡献时执行：
 
@@ -185,7 +185,7 @@ git push origin contribute
 
 ---
 
-## 六、注意事项
+### 六、注意事项
 
 - 每次贡献前先同步上游：`git checkout contribute && git fetch upstream && git merge upstream/contribute`，确保本地 `contribute` 分支基于最新的 `upstream/contribute`（仅 fetch 不会更新本地分支，详见上文）
 - 一 PR 一事，不混入无关修改
@@ -194,3 +194,11 @@ git push origin contribute
 - 如果没有修改依赖，请不要提交 `package.json` 或 `package-lock.json` 的变化
 - 本地构建统一使用 PowerShell 执行 `./build.ps1`
 - 收到 review 后在同一分支继续修改并 push 即可
+
+
+## 通过飞书流程
+
+- 欢迎您使用 [**飞书**](https://ycnbhi79uv2d.feishu.cn/wiki/YrIOwlkXlidu4zkAeOjcMP7XnFg?from=from_copylink) 进行 [**QUTWiKi**](https://wiki.quters.top) 的编写工作。
+- 在左侧三栏有**序言，新生入学，校园生活**三个分区，您可以在其中修订文章或者新增篇目。
+- 由于我不会经常登录飞书进行文档的查阅，所以如果您对文档有所更改，欢迎进入 [**QUTWiKi**](https://wiki.quters.top) 的QQ群（**752307273**）进行反馈，或者联系我的个人邮箱说明情况（[**lucasandrew0120@outlook.com**](mailto:lucasandrew0120@outlook.com)）
+- 反馈时请说明修改时间，修改人名称和修改内容
