@@ -281,7 +281,10 @@ function tokenizeSearchText(text: string) {
 export default defineConfig({
   lang: 'zh-CN',
   title: 'QUTWiKi',
-  description: '青岛理工大学 Wiki 知识库',
+  description: '青岛理工大学 WiKi 知识库',
+  sitemap: {
+    hostname: 'https://wiki.quters.top',
+  },
   lastUpdated: true,
   cleanUrls: true,
   vite: {
