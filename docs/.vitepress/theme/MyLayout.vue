@@ -121,9 +121,17 @@ function warmupLocalSearch() {
   })
 }
 
+function migrateDetailedSearchDefault() {
+  const migrationKey = 'qutwiki:detailed-search-default-v1'
+  if (localStorage.getItem(migrationKey)) return
+  localStorage.setItem('vitepress:local-search-detailed-list', 'true')
+  localStorage.setItem(migrationKey, 'true')
+}
+
 onMounted(() => {
   document.addEventListener('click', onDocumentClick)
   document.addEventListener('keydown', onKeydown)
+  migrateDetailedSearchDefault()
   warmupLocalSearch()
 })
 

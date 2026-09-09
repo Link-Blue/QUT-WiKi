@@ -263,15 +263,16 @@ function tokenizeSearchText(text: string) {
 
   for (const part of parts) {
     if (/^[\u4e00-\u9fff]+$/.test(part)) {
-      if (part.length === 1) {
-        tokens.push(part)
-        continue
-      }
-      for (let i = 0; i < part.length - 1; i++) {
-        tokens.push(part.slice(i, i + 2))
+      for (let i = 0; i < part.length; i++) {
+        tokens.push(part[i])
+        if (i < part.length - 1) tokens.push(part.slice(i, i + 2))
       }
     } else {
-      tokens.push(part.toLowerCase())
+      const normalized = part.toLowerCase()
+      tokens.push(normalized)
+      if (/\d/.test(normalized) && /[a-z]/.test(normalized)) {
+        tokens.push(...normalized.match(/[a-z]+|\d+/g)!)
+      }
     }
   }
 
@@ -368,6 +369,7 @@ export default defineConfig({
     search: {
       provider: 'local',
       options: {
+        detailedView: true,
         translations: {
           button: {
             buttonText: '搜索',

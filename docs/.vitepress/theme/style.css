@@ -45,6 +45,13 @@ body::before {
   table-layout: fixed;
 }
 
+.vp-doc th,
+.vp-doc td {
+  min-width: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+}
+
 .main img {
   cursor: zoom-in;
 }
