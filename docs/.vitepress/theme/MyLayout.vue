@@ -4,6 +4,7 @@ import { useData, useRoute } from 'vitepress'
 import { computed, ref, onMounted, onUnmounted } from 'vue'
 import Contributors from './components/Contributors.vue'
 import TwikooComments from './components/TwikooComments.vue'
+import SiteAnnouncement from './components/SiteAnnouncement.vue'
 
 const { frontmatter } = useData()
 const route = useRoute()
@@ -152,6 +153,9 @@ onUnmounted(() => {
     :key="route.path"
   >
     <DefaultTheme.Layout>
+      <template #layout-top>
+        <SiteAnnouncement />
+      </template>
       <template #doc-footer-before>
         <Contributors />
       </template>
